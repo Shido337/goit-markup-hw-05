@@ -381,32 +381,31 @@
                 </li>
                 </ul>
             </div>
-
-
+            
         <div class="footer-email">
                 <p class="sub-text">Subscribe</p>
-                <form name="email-sub-form" action="" class="footer-form" autocomplete="off">
-            <div class="input-wrapper">
-                    <input 
-                    class="form-email" 
+        <form class="sub-form">
+            <label class="sub-lable" for="sub-email"></label>
+            <input 
+                    class="sub-input" 
                     type="email" 
-                    name="email" 
-                    id="user-email"
-                    placeholder="E-mail">   
-                    <button type="submit" class="email-sbmt-btn">
+                    name="sub-email" 
+                    id="sub-email"
+                    placeholder="E-mail" /> 
+            <button type="submit" class="email-sbmt-btn">
                         Subscribe
-                        <svg class="sub-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-telegram">
-                            </use>
-                        </svg>
-                    </button>
-            </div>
-            </form>
+                    <svg class="sub-icon" width="24" height="24">
+                         <use href="./images/icons.svg#icon-telegram">
+                        </use>
+                    </svg>
+                </button>
+        </form>
+        </div>
         </div>
     </footer>
 <!-- !MODAL -->
 
-<div class="backdrop">
+<!-- <div class="backdrop is-open"></div> -->
 <div class="modal">
     <p class="modal-title">Leave your contacts and we will call you back
     </p>
@@ -417,28 +416,28 @@
     </button>
     <form class="modal-form">
         <label class="modal-lable" for="username">Name
-            <div class="input-wrapper">
+            <span class="input-wrapper">
                 <input class="modal-input" type="text" name="username" id="username" />
-                <svg class="modal-icon" height="24" width="24">
+                <svg class="modal-icon" height="24" width="18">
                     <use href="./images/icons.svg#icon-person"></use>
                 </svg>
-            </div>
+            </span>
         </label>
         <label class="modal-lable" for="user-phone">Phone
-            <div class="input-wrapper">
-                <input class="modal-input" type="number" name="user-phone" id="user-phone" />
-                <svg class="modal-icon" height="24" width="24">
+            <span class="input-wrapper">
+                <input class="modal-input" type="tel" name="user-phone" id="user-phone" />
+                <svg class="modal-icon" height="24" width="18">
                     <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
-            </div>
+            </span>
         </label>
         <label class="modal-lable" for="user-email">Email
-            <div class="input-wrapper">
-                <input class="modal-input" type="email" name="user-email" id="user-email" required />
-                <svg class="modal-icon" height="24" width="24">
+            <span class="input-wrapper">
+                <input class="modal-input" type="email" name="email" id="email" required />
+                <svg class="modal-icon" height="24" width="18">
                     <use href="./images/icons.svg#icon-email"></use>
                 </svg>
-            </div>
+            </span>
         </label>
         <label class="modal-lable" for="user-comment">
             Comment
@@ -452,10 +451,10 @@
                         <use href="./images/icons.svg#icon-checkbox"></use>
                     </svg>
                 </span>
-                <p class="policy-text">
+                <span class="policy-text">
                     I accept the terms and conditions of the
                     <a href="" class="policy-link">Privacy Policy</a>
-                </p>
+                </span>
             </label>
         </div>
         <button class="modal-btn" type="submit">Send</button>
