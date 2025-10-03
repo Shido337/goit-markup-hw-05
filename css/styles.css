@@ -800,8 +800,9 @@ border: none;
         margin-top: 4px;
         padding-left: 38px;
         background-color: transparent;
+        outline: transparent;
                 overflow: hidden;
-
+border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-wrapper .modal-icon {
@@ -810,7 +811,7 @@ border: none;
         left: 16px;
         stroke: none;
         fill: var(--navy-blue);
-        transform: translateY(-40%);
+        transform: translateY(-50%);
 }
 
 .input-wrapper:active{
