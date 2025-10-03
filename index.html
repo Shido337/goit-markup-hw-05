@@ -403,7 +403,7 @@
     </footer>
 <!-- !MODAL -->
 
-<div class="backdrop">
+<div class="backdrop is-open">
 <div class="modal">
     <button type="button" class="modal-close-btn">
         <svg class="close-icon" height="8" width="8">
@@ -447,10 +447,13 @@
                     </label>
         </div>
 
-        <label class="modal-lable" for="user-comment">
-            Comment
-            <textarea class="modal-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
-        </label>
+        <div class="lable-container">
+                    <label class="modal-lable" for="user-comment">
+                        Comment
+                        <textarea class="modal-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+                    </label>
+        </div>
+
         <div class="checkbox-wrapper">
             <input class="modal-checkbox is-hidden" type="checkbox" name="policy" id="policy"/>
             <label for="policy" class="checkbox-lable">
