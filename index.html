@@ -410,33 +410,43 @@
             <use href="./images/icons.svg#icon-close"></use>
         </svg>
     </button>
+    <div class="modal-container">
     <p class="modal-title">Leave your contacts and we will call you back
     </p>
     <form class="modal-form">
-        <label class="modal-lable" for="username">Name
-            <span class="input-wrapper">
-                <input class="modal-input" type="text" name="username" id="username" />
+        <div class="lable-container">
+        <lable class="modal-lable" for="user-name">Name
+            <div class="input-wrapper">
+                <input class="modal-input" type="text" name="user-name" id="user-name" />
                 <svg class="modal-icon" height="24" width="18">
                     <use href="./images/icons.svg#icon-person"></use>
                 </svg>
-            </span>
+            </div>
         </label>
-        <label class="modal-lable" for="user-phone">Phone
-            <span class="input-wrapper">
-                <input class="modal-input" type="tel" name="user-phone" id="user-phone" />
-                <svg class="modal-icon" height="24" width="18">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-            </span>
-        </label>
-        <label class="modal-lable" for="user-email">Email
-            <span class="input-wrapper">
-                <input class="modal-input" type="email" name="user-email" id="user-email" />
-                <svg class="modal-icon" height="24" width="18">
-                    <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-            </span>
-        </label>
+        </div>
+
+        <div class="lable-container">
+            <label class="modal-lable" for="user-phone">Phone
+                <div class="input-wrapper">
+                    <input class="modal-input" type="tel" name="user-phone" id="user-phone" />
+                    <svg class="modal-icon" height="24" width="18">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+            </label>
+        </div>
+
+        <div class="lable-container">
+                    <label class="modal-lable" for="user-email">Email
+                        <div class="input-wrapper">
+                            <input class="modal-input" type="email" name="user-email" id="user-email" />
+                            <svg class="modal-icon" height="24" width="18">
+                                <use href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                    </label>
+        </div>
+
         <label class="modal-lable" for="user-comment">
             Comment
             <textarea class="modal-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
@@ -458,6 +468,7 @@
         <button class="modal-btn" type="submit">Send</button>
     </form>
     </div>
+</div>
 </div>
     <script type="module" src="./js/script.js"></script>
 </body>
