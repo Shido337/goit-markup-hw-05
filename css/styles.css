@@ -860,11 +860,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         margin-bottom: 24px;
 }
 
-.modal-checkbox:checked + .checkbox-lable .custom-checkbox{
-background-color: var(--ocean);
-border: none;
-fill: var(--cloud);
-}
 
 .policy-text {
     font-family: "Roboto", sans-serif;
@@ -907,9 +902,7 @@ fill: var(--cloud);
     background: var(--ocean);
 }
 
-.checkbox-lable{
-    display: flex;
-    gap: 8px;
+.checkbox-lable{;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -925,11 +918,11 @@ fill: var(--cloud);
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     fill: transparent;
+    margin-right: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox:checked+.checkbox-lable .custom-checkbox {
-    display: inline-flex;
     background-color: var(--ocean);
     border: none;
     fill: var(--cloud);
